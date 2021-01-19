@@ -17,14 +17,14 @@
 <meta charset="utf-8">
 
 
-<title>Snowwy.wtf</title>
+<title>KeySystem</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="MainDesign.css"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
 <div class="keysyscontainer">
     <div class="box">
-        <span class="title">Snowwy.wtf</span>
+        <span class="title">KeySystem</span>
         <span class="text"> You will have to go through four linkvertises. The key will last around 10 minutes. Redirecting in 5 seconds... </span>
-        <span class="text"> No one likes advertisments, but going through this supports the creators of Snowwy.wtf. </span>
+        <span class="text"> No one likes advertisments, but going through this supports the creators of KeySystem. </span>
 </html>
