@@ -46,14 +46,14 @@ print("Powered by KeyAuth.com login system");
         }
 </script>
     
-<title>Snowwy.wtf</title>
+<title>KeySystem</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="MainDesign.css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 <div class="keysyscontainer">
     <div class="box">
-        <span class="title">Snowwy.wtf Key</span>
-        <span class="text"> This is your Snowwy.wtf key. This key is valid for around 10 minutes only. </span>
+        <span class="title">KeySystem Keyy</span>
+        <span class="text"> This is your KeySystem key. This key is valid for around 10 minutes only. </span>
         <span class="text"> Your key: <?php echo $key ?></span>
         <button onclick = "return copyToClipboard()" class="button Copy">Copy Key</button>
 </html>
