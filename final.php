@@ -10,7 +10,7 @@ if(time() - $_SESSION['timefour'] < 15 || !isset($_SESSION['timefour']))
 	return;
 }
 
-$ch = curl_init("https://keyauth.com/api/seller/?sellerkey=sellerkeyhere&type=add&expiry=0.00694444444");
+$ch = curl_init("https://keyauth.com/api/seller/?sellerkey=sellerkeyhere&type=add&expiry=0.00694444444&format=text");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 $key = curl_exec($ch);
