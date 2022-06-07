@@ -261,7 +261,7 @@ session_destroy();
     function GenLicense($sellerKey, $keyMask)
     {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://keyauth.win/api/seller/?sellerkey=" . $sellerKey . "&type=add&expiry=1&mask=" . $keyMask . "&level=1&amount=1&format=text");
+        curl_setopt($ch, CURLOPT_URL, "https://keyauth.win/api/seller/?sellerkey=" . $sellerKey . "&type=add&expiry=0.00694444444&mask=" . $keyMask . "&level=1&amount=1&format=text");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $result = curl_exec($ch);
