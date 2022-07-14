@@ -203,7 +203,12 @@ if (time() - $_SESSION['FSTimeFive'] < 15 || !isset($_SESSION['FSTimeFive'])) {
     die();
 }
 
-$key = GenLicense($SellerKey, $KeyMask);
+$GenResult = GenLicense($SellerKey, $KeyMask);
+$Json = json_decode($GenResult);
+
+if ($Json->success) { } else {
+    die("Error: " . Json->message);
+}
 
 session_unset();
 session_destroy();
@@ -228,14 +233,14 @@ session_destroy();
             <center><span class="title">KeyAuth - Enjoy your license!</span></center>
 
             <span class="text"> Thanks for going trought this Linkvertise system!
-                Here is your Key / License: <span class="bold smool"><?php echo $key ?></span></span>
+                Here is your Key / License: <span class="bold smool"><?php echo $Json->key ?></span></span>
             <button onclick="return copyToClipboard()" class="button Copy">Copy Key</button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script>
         function copyToClipboard() {
-            var e = "<?php echo $key ?>";
+            var e = "<?php echo $Json->key ?>";
             var tempItem = document.createElement('input');
             tempItem.setAttribute('type', 'text');
             tempItem.setAttribute('display', 'none');
@@ -261,7 +266,7 @@ session_destroy();
     function GenLicense($sellerKey, $keyMask)
     {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://keyauth.win/api/seller/?sellerkey=" . $sellerKey . "&type=add&expiry=0.00694444444&mask=" . $keyMask . "&level=1&amount=1&format=text");
+        curl_setopt($ch, CURLOPT_URL, "https://keyauth.win/api/seller/?sellerkey=" . $sellerKey . "&type=add&expiry=0.00694444444&mask=" . $keyMask . "&level=1&amount=1&format=json");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         $result = curl_exec($ch);
