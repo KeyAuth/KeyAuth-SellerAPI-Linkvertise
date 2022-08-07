@@ -207,7 +207,7 @@ $GenResult = GenLicense($SellerKey, $KeyMask);
 $Json = json_decode($GenResult);
 
 if ($Json->success) { } else {
-    die("Error: " . Json->message);
+    die("Error: " . $Json->message);
 }
 
 session_unset();
