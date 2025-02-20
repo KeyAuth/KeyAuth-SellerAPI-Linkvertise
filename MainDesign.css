@@ -10,7 +10,7 @@
 html,
 body {
     height: 100%;
-    background: #19143b;
+    background: #09090d;
 }
 
 .keysyscontainer {
@@ -23,7 +23,7 @@ body {
 
 .box {
     width: 460px;
-    background: #100845;
+    background: #0f0f17;
     border-radius: 3px;
     border: 1px solid #dcdcdc;
     padding: 24px;
@@ -82,5 +82,5 @@ body {
 }
 
 .Copy {
-    background-color: #6118ba;
+    background-color: #0f0f17;
 }
