@@ -12,7 +12,7 @@ Change 5-12 Lines to your's
 ```
 ## **Bugs**
 
-If the default example not added to your software isn't functioning how it should, please report a bug here https://keyauth.cc/app/?page=forms
+If the default example not added to your software isn't functioning how it should, please report a bug here https://keyauth.fdback.io
 
 However, we do **NOT** provide support for adding KeyAuth to your project. If you can't figure this out you should use Google or YouTube to learn more about the programming language you want to sell a program in.
 
